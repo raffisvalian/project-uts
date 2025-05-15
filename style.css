@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+}
+
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main {
+    flex: 1;
+    padding: 2em 0;
+}
+
+.hero {
+    background-color: #e0f2f1;
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.destinasi ul {
+    padding-left: 20px;
+    list-style: square;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1.5em 1em;
+    font-size: 0.95em;
+    border-top: 4px solid #00796b;
+    width: 100%;
+}
+
+.galeri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1em 0;
+}
+
+.galeri img {
+    flex: 1 1 calc(48% - 20px);
+    max-width: calc(48% - 20px);
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input[type="text"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004d40;
+}
